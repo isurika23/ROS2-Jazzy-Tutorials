@@ -39,3 +39,6 @@
 
 # Solutions
 solution*.ipynb
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
