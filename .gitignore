@@ -35,10 +35,55 @@
 .venv
 
 # Text files
-*.txt
+# *.txt
 
 # Solutions
 solution*.ipynb
 
 # Jupyter Notebook Checkpoints
 .ipynb_checkpoints
+
+
+# Ignore ROS 2 workspace files
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# Colcon metadata
+.colcon/
+.colcon_install_layout
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE/editor specific
+.vscode/
+.idea/
+*.swp
+*.bak
+*~
+
+# Ensure source and important files are tracked
+# (Assuming your source code is under src/)
+!src/
+!src/**/
+!src/**/CMakeLists.txt
+!src/**/package.xml
+!src/**/*.msg
+!src/**/*.srv
+!src/**/*.action
+!src/**/*.cpp
+!src/**/*.hpp
+!src/**/*.py
+!src/**/*.yaml
+!src/**/*.launch.py
