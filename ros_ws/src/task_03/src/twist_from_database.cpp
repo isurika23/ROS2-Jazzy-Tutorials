@@ -31,7 +31,7 @@ public:
         publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("twist_from_database", 20);
         RCLCPP_INFO(this->get_logger(), "Publisher created on topic 'twist_from_database'");
 
-        std::cout << count_ << std::endl;
+        // std::cout << count_ << std::endl;
 
         auto timer_callback = [this]()
         {
