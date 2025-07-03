@@ -87,3 +87,32 @@ __pycache__/
 !src/**/*.py
 !src/**/*.yaml
 !src/**/*.launch.py
+
+
+# === ament_python-specific ===
+
+# Python packaging
+*.egg-info/
+dist/
+build/  # Only add if your Python package uses setuptools directly
+
+# pipenv / poetry / pyenv (optional if used)
+Pipfile
+Pipfile.lock
+poetry.lock
+pyproject.toml
+
+# Unit testing
+*.coverage
+.cache/
+.coverage.*
+htmlcov/
+nosetests.xml
+test-results.xml
+.tox/
+
+# Python virtual environments (if named differently)
+.env/
+.venv/
+ENV/
+env/
