@@ -1,3 +1,11 @@
+// to see the publishing of twist messages from a CSV file in ROS2.
+
+// Open a new terminal. After sourcing the workspace, run the following command:
+// >> ros2 run task_03 twist_from_database
+
+// To see the published messages, you can use the following command in another terminal:
+// >> ros2 topic echo /twist_from_database
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
