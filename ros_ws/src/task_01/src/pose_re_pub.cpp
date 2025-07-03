@@ -30,3 +30,31 @@ int main(int argc, char *argv[])
     rclcpp::shutdown();
     return 0;
 }
+
+// to test the node, run the following commands in separate terminals:
+// 1. `ros2 run task_01 pose_re_pub`
+// 2. `ros2 topic pub /pose_with_covariance_stamped geometry_msgs/msg/PoseWithCovarianceStamped "
+// header:
+//   stamp:
+//     sec: 0
+//     nanosec: 0
+//   frame_id: 'map'
+// pose:
+//   pose:
+//     position:
+//       x: 1.0
+//       y: 2.0
+//       z: 0.0
+//     orientation:
+//       x: 0.0
+//       y: 0.0
+//       z: 0.0
+//       w: 1.0
+//   covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+//                0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+//                0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+//                0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+//                0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+//                0.0, 0.0, 0.0, 0.0, 0.0, 0.0]"
+// "
+// 3. `ros2 topic echo /pose`
